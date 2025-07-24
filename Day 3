@@ -1,0 +1,50 @@
+Introduction to Kali Linux Terminal:
+Gained familiarity with the Kali Linux environment and its importance in cybersecurity tasks.
+
+File and Directory Navigation:
+
+ls – List files and directories
+
+cd – Change directories
+
+pwd – Display current working directory
+
+mkdir – Create directories
+
+touch – Create new files
+
+rm – Delete files or directories
+
+cp / mv – Copy and move files
+
+Permissions and Ownership:
+
+ls -l – View detailed file permissions
+
+chmod – Change permissions
+
+chown – Change file ownership
+
+Networking Basics:
+
+ifconfig / ip a – View IP addresses and network interfaces
+
+ping – Test network connectivity
+
+netstat – View active network connections
+
+nmap (Intro) – Perform basic network scanning
+
+System Monitoring and Info:
+
+top, htop – Monitor system processes
+
+whoami, id – Identify current user
+
+uname -a – Display system information
+
+Hands-On Practice:
+Practiced all commands directly in Kali Linux, observing their outputs and use cases in real scenarios.
+
+Importance of CLI:
+Emphasized that command-line skills are essential for any cybersecurity role, especially for tasks involving automation, scripting, and remote system control.
