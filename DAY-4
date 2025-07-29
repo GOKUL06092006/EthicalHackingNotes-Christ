@@ -1,0 +1,168 @@
+Network Fundamentals: A Practical Overview
+Welcome to a quick guide on essential networking concepts, useful tools, and real-world tips. Whether you're just getting started or need a refresher, this doc covers the basics with clarity and purpose.
+
+What is a Network?
+A network is simply a group of connected devices—like computers, servers, or routers—that can share information and resources. Networks can be tiny (two laptops sharing files) or massive (like the internet itself).
+
+What is a Subnet?
+A subnet (short for subnetwork) breaks a large network into smaller, manageable chunks. This:
+
+Keeps traffic organized
+
+Improves performance
+
+Boosts security by isolating devices
+
+Think of it as dividing a busy highway into local streets.
+
+What is Port Forwarding?
+Port forwarding lets outside devices access services inside your private network (like a game server or a home web server). It’s like telling your router, “When someone knocks on port 80, forward them to this specific device.”
+
+Antivirus Limitations
+Most antivirus software can’t scan inside password-protected files (like encrypted ZIPs or locked Word docs). That means:
+
+Malware can hide there undetected
+
+Antivirus scans might miss threats
+
+Tip: Never open password-protected files from unknown sources!
+
+User Account Control (UAC) in Windows
+UAC helps stop apps from making changes to your system without your approval. It:
+
+Prompts for permission on important changes
+
+Runs apps as regular users by default
+
+Helps prevent malware from taking control
+
+UAC Levels:
+Always Notify: Most secure
+
+Default: Notifies when apps try changes
+
+No Dimming: Same as default, but friendlier UI
+
+Never Notify: Not recommended
+
+Have I Been Pwned (HIBP)
+Created by security expert Troy Hunt, this free tool lets you:
+
+Check if your email or password was exposed in a data breach
+
+Look up pastes containing your data
+
+Search breaches by domain
+
+Use an API to integrate checks into your apps
+
+Website: https://haveibeenpwned.com
+
+Wayback Machine
+The Wayback Machine is an internet archive that allows you to:
+
+View old versions of websites
+
+Recover lost or deleted pages
+
+Research how sites have changed over time
+
+Website: https://archive.org/web
+
+What’s an API?
+An API (Application Programming Interface) lets software systems talk to each other. It defines how apps can request or send data.
+
+Common API Types:
+REST: Simple and widely used
+
+GraphQL: Flexible queries
+
+SOAP: Heavier, more strict
+
+WebSocket: Real-time communication
+
+Use Cases:
+Connect services (e.g., payment gateways)
+
+Power mobile apps
+
+Automate tasks with scripts
+
+.env Files
+.env files store environment variables like API keys, secrets, and config settings. This helps:
+
+Keep sensitive data out of your code
+
+Customize settings per environment (dev, prod, etc.)
+
+Best Practices:
+Never commit .env files to Git
+
+Add them to .gitignore
+
+Validate required variables at startup
+
+Nmap Cheat Sheet (Kali Linux)
+Nmap is a go-to tool for network scanning and security audits.
+
+Handy Flags:
+Flag	Purpose
+-Pn	Skip host discovery
+-A	Aggressive scan (OS, version, scripts, traceroute)
+-sV	Detect service versions
+-O	Detect operating system
+--script	Use built-in scripts (e.g. vuln)
+-p-	Scan all 65,535 ports
+-p 80,443	Scan specific ports
+-sS	Stealthy SYN scan
+-vv	Verbose output
+
+Examples:
+bash
+Copy
+Edit
+nmap -A -p- target.com
+nmap -sS -p 80,443 target.com
+nmap --script vuln target.com
+TCP vs UDP: What’s the Difference?
+Feature	TCP	UDP
+Connection	Yes (3-way handshake)	No
+Reliability	Guaranteed	Not guaranteed
+Ordering	Yes	No
+Speed	Slower	Faster
+Use Cases	Web, file transfer, email	Streaming, gaming, DNS
+
+Rule of thumb:
+
+Use TCP when reliability matters (e.g., websites)
+
+Use UDP when speed is key (e.g., live video)
+
+IPv4 vs IPv6: What's the Deal?
+Feature	IPv4	IPv6
+Address Size	32-bit	128-bit
+Format	192.168.0.1	2001:0db8::1
+Addresses	~4.3 billion	340 undecillion
+Broadcast	Yes	Replaced with multicast
+Security	Optional	Built-in with IPsec
+
+Summary:
+
+IPv4 is still widely used for compatibility
+
+IPv6 is scalable and built for the future
+
+MAC Address: Your Device’s Digital Name Tag
+MAC = Media Access Control
+
+Unique hardware address assigned to network interfaces
+
+Format: 00:1A:2B:3C:4D:5E
+
+Used for device identification and communication in local networks
+
+Note: Can be spoofed, so don’t rely on it for secure authentication.
+
+Conclusion
+This guide covers the essentials of networking, security, and tools you'll encounter in real-world setups. Feel free to fork, contribute, or customize it for your own use.
+
